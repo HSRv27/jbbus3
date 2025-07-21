@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梧州智慧公交</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>梧州智慧公交</h1>
+        </header>
+        
+        <main class="main-content">
+            <div class="traffic-info">
+                <h2>交通消息</h2>
+                <div class="time-display" id="current-time"></div>
+                
+                <div class="bus-info">
+                    <div class="bus-item">
+                        <h3 class="bus-title">7路开往中山路</h3>
+                        <p class="bus-subtitle">下一班14:35</p>
+                    </div>
+                    <div class="bus-item">
+                        <h3 class="bus-title">7路开往中山路</h3>
+                        <p class="bus-subtitle">下一班14:35</p>
+                    </div>
+                    <div class="bus-item">
+                        <h3 class="bus-title">7路开往中山路</h3>
+                        <p class="bus-subtitle">下一班14:35</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active" id="nav-home">
+                <span>首页</span>
+            </a>
+            <a href="https://drive.weixin.qq.com/s?k=ACcAHQczABELWfTPGt" class="nav-item" id="nav-query">
+                <span>公交查询</span>
+            </a>
+            <a href="#" class="nav-item" id="nav-business">
+                <span>公司业务</span>
+            </a>
+            <a href="#" class="nav-item" id="nav-me">
+                <span>我</span>
+            </a>
+        </nav>
+    </div>
+    
+    <!-- 公司业务弹窗 -->
+    <div class="modal" id="business-modal">
+        <div class="modal-content">
+            <h3>公司业务</h3>
+            <ul class="business-options">
+                <li><a href="#">包车定制</a></li>
+                <li><a href="#">校园定制</a></li>
+                <li><a href="#">企业定制</a></li>
+                <li><a href="#">其他定制</a></li>
+            </ul>
+            <button class="close-btn">关闭</button>
+        </div>
+    </div>
+    
+    <!-- 我的页面弹窗 -->
+    <div class="modal" id="me-modal">
+        <div class="modal-content">
+            <h3>我的</h3>
+            <div class="theme-options">
+                <h4>换肤功能</h4>
+                <div class="theme-item" data-color="#FFD700">
+                    <span class="theme-color" style="background-color: #FFD700;"></span>
+                    <span class="theme-name">珍宝黄</span>
+                </div>
+                <div class="theme-item" data-color="#1E90FF">
+                    <span class="theme-color" style="background-color: #1E90FF;"></span>
+                    <span class="theme-name">城投蓝</span>
+                </div>
+                <div class="theme-item" data-color="#FF0000">
+                    <span class="theme-color" style="background-color: #FF0000;"></span>
+                    <span class="theme-name">中国红</span>
+                </div>
+                <div class="theme-item" data-color="#000000">
+                    <span class="theme-color" style="background-color: #000000;"></span>
+                    <span class="theme-name">宇宙黑</span>
+                </div>
+                <div class="theme-item" data-color="#32CD32">
+                    <span class="theme-color" style="background-color: #32CD32;"></span>
+                    <span class="theme-name">金晖绿</span>
+                </div>
+            </div>
+            <div class="additional-option">
+                <a href="https://sk.lishewen.com/tdplan" class="bus-schedule">备用公交发车查询</a>
+            </div>
+            <button class="close-btn">关闭</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
